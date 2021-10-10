@@ -42,4 +42,16 @@ describe("Calculadora de salário", () =>{
         let res = calculadora.calculaSalario(2500, "Gerente");
         expect(res).toBe(2000);
     });
+
+    test("Quando o cargo inserido é inválido", () =>{
+        expect(
+            () => calculadora.calculaSalario(2500, "Designer")
+        ).toThrow("O cargo inserido é inválido!!");
+    });
+
+    test("Quando o salário inserido é inválido", () =>{
+        expect(
+            () => calculadora.calculaSalario(0, "Gerente")
+        ).toThrow("O salário inserido é inválido!!");
+    });
 });
