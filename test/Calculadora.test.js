@@ -32,4 +32,9 @@ describe("Calculadora de salário", () =>{
         let res = calculadora.calculaSalario(550, "Testador");
         expect(res).toBe(467.50);
     });
+
+    test("O cargo do funcionário é de Gerente e o salário de 6650", () =>{
+        let res = calculadora.calculaSalario(6650, "Gerente");
+        expect(res).toBe(4655);
+    });
 });
