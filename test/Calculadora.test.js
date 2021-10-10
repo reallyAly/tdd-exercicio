@@ -8,4 +8,8 @@ describe("Calculadora de salário", () =>{
         expect(res).toBe(4000);
     });
 
+    test("O cargo do funcionário é de desenvolvedor e o salário de 1500", () =>{
+        let res = calculadora.calculaSalario(1500, "Desenvolvedor");
+        expect(res).toBe(1350);
+    });
 });
