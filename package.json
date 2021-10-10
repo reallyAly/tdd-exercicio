@@ -4,7 +4,7 @@
   "description": "Calculadora para calculo de salário de funcionários implementada com o intuito de fixar conceitos relacionados a Test Driven Development (TDD)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
